@@ -1,51 +1,92 @@
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
+*{
+    padding: 0;
     margin: 0;
+    font-family: 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+    font-size: 50px;
+    text-transform: capitalize;
+}
+body{
+     margin: 10px;
+     background-color: rgb(213, 227, 239);
+}
+header{
+    align-items: center;
+    background-color: rgb(19, 22, 18);
+   
+    color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-radius: 30px;
+    
+}
+header div:nth-child(1) {
+    font-size: 80px;
+}
+main{
+    margin-top: 10px;
+    display: flex;
+    gap:90px;
+}
+aside{
+    width: 35%;
+    background-color: rgb(99, 107, 121);
+    border-radius: 25px;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: aliceblue;
+}
+aside ul{
+    list-style: none;
+    margin: 20px;
+
+}
+aside li{
+    margin: 5px;
+    padding: 10px 20px 10px 20px;
+    
+}
+button{
+    margin: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: rgb(52, 52, 167);
+    color: aliceblue;
     padding: 20px;
 }
-
-.schedule-table {
-
-    width: 100%;
-    border-collapse: collapse;
-    margin: 20px 0;
-    font-size: 18px;
-    font-weight: bolder;
+.main-content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+#top-main-content{
+    display:flex;
+    justify-content: center;
+    gap: 20px;
+    
+}
+#top-main-content div{
+    padding: 80px;
+    background-color: aliceblue;
+    border-top:10px solid green ;
+    border-radius: 20px;
+}
+#bottom-main-content{
+    padding: 80px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.18);
+}
+#bottom-main-content h4{
+    padding: 20px;
+}
+footer{
+    background-color: rgb(19, 19, 28);
     text-align: center;
-    background-color: #ffffff;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
-}
-
-.schedule-table th, .schedule-table td {
-    padding: 12px 15px;
-    border: 1px solid #dddddd;
-}
-
-.schedule-table th {
-    background-color: #f4b084;
-    color: #ffffff;
-    font-weight: bold;
-}
-
-.schedule-table td {
-    background-color: #f9f9f9;
-}
-
-.schedule-table tr:nth-child(even) td {
-    background-color: #f1f1f1;
-}
-
-.schedule-table tr:hover td {
-    background-color: #f4f4f4;
-}
-
-.schedule-table p {
-    margin: 5px 0;
-    font-size: 16px;
-}
-
-.schedule-table b {
-    font-weight: bold;
-    color: #333333;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    color:aliceblue;
 }
